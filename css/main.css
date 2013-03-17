@@ -1,0 +1,146 @@
+/*main css*/
+
+/*reset*/
+	@import url("normalize-customized.css");
+	body {
+		font-family: Georgia, Times, Tahoma, serif;
+		margin:0;
+		padding:0;
+		padding-bottom:3em;
+	}
+/*fonts*/
+
+/*headings*/
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
+	font-family: 'Alfa Slab One', cursive;
+	line-height: 1.6;
+	margin:0;
+	padding:0;
+	color:#000;	
+}
+p {
+	line-height:1.55;
+}
+article ul {
+	font-size:1.5em;
+	color:#000;
+	line-height:1.1;
+}
+article ul li {
+	margin-bottom:.4em;
+}
+/*links*/
+a:link {
+	color:#3299BB;
+}
+a:hover, a:focus {
+	color:#FF9900;
+}
+a:active {
+	color:red;	
+}
+.hidden {
+	display:none;
+}
+/*main content*/
+#main-container {
+	width: 90%;
+	margin-left: 5%;
+	max-width:1240px;
+}
+header {
+	padding-bottom: 1.6em;
+	border-bottom:5px solid #BCBCBC;
+}
+nav {
+	padding-top:.65em;
+	-moz-column-count:4; /* Firefox */
+	-webkit-column-count:4; /* Safari and Chrome */
+	column-count:4;
+	max-height: 2em;
+}
+nav ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+article {	
+	padding-top:1.6em;
+	color:#222222;
+}
+/*skills content*/
+#skills ul {
+	 -moz-column-count: 2;
+    -moz-column-gap: 1em;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 1em;
+    column-count: 2;
+	column-gap:1em;
+}
+#contact form {
+	
+}
+#contact form label, #contact form input, #contact form button  #contact form textarea{
+	display:block;
+	min-height:1em;
+	font-size:1.5em;
+}
+#contact form label {
+	padding:.5em 0;
+}
+#contact form textarea, #contact form input {
+	width:80%;
+	border:1px solid #BCBCBC;
+	padding:.33em 1em;
+}
+#contact form button {
+	width:100%;
+	margin:1.5em 0;	
+}
+footer {
+	position:fixed;
+	bottom:0;
+	width:105%;
+	margin-left:-5%;
+	height:3em;
+	background:#FCFCFC;
+	border-top:1px solid #BCBCBC;
+	text-align: center;
+}
+/*media queries*/
+@media screen and (max-width:600px) {
+	nav {
+		-moz-column-count:2; /* Firefox */
+		-webkit-column-count:2; /* Safari and Chrome */
+		max-height:6em;
+		overflow:hidden;		
+	}
+	nav ul {
+		text-align:left;
+		
+	}
+	nav ul button {
+		margin-bottom:1.5em;
+		width:100%;
+	}
+	article ul {
+		font-size:1.3em;
+		color:#000;
+	}
+	#skills ul {
+	 -moz-column-count: 1;
+	 -webkit-column-count:1;
+	 column-count:1;
+	}
+	footer {
+		width:110.5%;
+		position: static;
+		height:1.5em;
+	}
+}
+/*	small screens*/
+/*	medium screens*/
+/*	"standard" screens*/
+/*	large screens*/
